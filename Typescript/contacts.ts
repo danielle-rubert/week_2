@@ -1,10 +1,10 @@
 import { Person } from "./Person";
 
 export class Contacts {
-    public people: Person[];
+    public people: Person[] = [];
   
-    constructor() {
-      this.people = [];
+    añadirPersona(people: Person) {
+      this.people.push(people);
     }
   
     printCalendar(): void {

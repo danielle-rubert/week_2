@@ -16,20 +16,21 @@ export class Person {
     yearOfBirth(currentYear: number): number {
       return currentYear - this.age;
     }
+
+     getAddress(): string {
+      return this.address;
+    }
   
     setAddress(address: string): void {
       this.address = address;
     }
   
-    getAddress(): string {
-      return this.address;
-    }
   }
   
 
-  const person = new Person("Pepe", 30, "Calle Alameda 40");
-  person.printName();
-  console.log(person.yearOfBirth(2025)); 
-  person.setAddress("Calle Nueva 245");
-  console.log(person.getAddress()); 
+  //const person = new Person("Pepe", 30, "Calle Alameda 40");
+  //person.printName();
+  //console.log(person.yearOfBirth(2025)); 
+  //person.setAddress("Calle Nueva 245");
+  //console.log(person.getAddress()); 
   
